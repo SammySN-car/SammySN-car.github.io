@@ -84,7 +84,79 @@
         </div>
       </div>
     </section>
-    <section id="projects" class="section"></section>
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Projects</h2>
+
+        <div class="filter-pills reveal" role="group" aria-label="Filter projects by tag">
+          <button type="button" class="pill active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="pill" data-filter="ai-ml" aria-pressed="false">AI/ML</button>
+          <button type="button" class="pill" data-filter="web" aria-pressed="false">Web</button>
+          <button type="button" class="pill" data-filter="full-stack" aria-pressed="false">Full-stack</button>
+          <button type="button" class="pill" data-filter="python" aria-pressed="false">Python</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <article class="project-card reveal" data-tags="ai-ml python rag">
+            <div class="project-icon" aria-hidden="true">🎵</div>
+            <h3>moodbeats</h3>
+            <p>AI music discovery — describe a vibe, get a curated playlist via RAG + neural reranking.</p>
+            <div class="project-tags"><span class="tag">AI/ML</span><span class="tag">Python</span><span class="tag">RAG</span></div>
+            <a href="https://github.com/SammySN-car/moodbeats" target="_blank" rel="noopener noreferrer" class="project-link">↗ GitHub</a>
+          </article>
+
+          <article class="project-card reveal" data-tags="ai-ml python">
+            <div class="project-icon" aria-hidden="true">📝</div>
+            <h3>smart-mcq-solver</h3>
+            <p>Ensemble ML + RAG for MCQs using ELECTRA, MiniLM, Qwen, and Wikipedia FAISS index.</p>
+            <div class="project-tags"><span class="tag">AI/ML</span><span class="tag">Python</span><span class="tag">ML</span></div>
+            <a href="https://github.com/SammySN-car/smart-mcq-solver" target="_blank" rel="noopener noreferrer" class="project-link">↗ GitHub</a>
+          </article>
+
+          <article class="project-card reveal" data-tags="ai-ml python">
+            <div class="project-icon" aria-hidden="true">🔬</div>
+            <h3>ai-research-agent</h3>
+            <p>Autonomous research assistant with LangGraph, Supabase pgvector, and multi-step reasoning.</p>
+            <div class="project-tags"><span class="tag">AI/ML</span><span class="tag">Python</span><span class="tag">Agents</span></div>
+            <a href="https://github.com/SammySN-car/ai-research-agent" target="_blank" rel="noopener noreferrer" class="project-link">↗ GitHub</a>
+          </article>
+
+          <article class="project-card reveal" data-tags="ai-ml python">
+            <div class="project-icon" aria-hidden="true">⚖️</div>
+            <h3>jev-deliberation-judge</h3>
+            <p>Multi-agent deliberation system — blind jurors, vote/weight/veto aggregation.</p>
+            <div class="project-tags"><span class="tag">AI/ML</span><span class="tag">Python</span><span class="tag">Multi-agent</span></div>
+            <a href="https://github.com/SammySN-car/jev-deliberation-judge" target="_blank" rel="noopener noreferrer" class="project-link">↗ GitHub</a>
+          </article>
+
+          <article class="project-card reveal" data-tags="ai-ml python">
+            <div class="project-icon" aria-hidden="true">🎓</div>
+            <h3>readme-free.ai</h3>
+            <p>Analyzes recorded viva/meeting sessions with LLMs — Drive links to graded reports.</p>
+            <div class="project-tags"><span class="tag">AI/ML</span><span class="tag">Python</span><span class="tag">LLM</span></div>
+            <a href="https://github.com/SammySN-car/readme-free.ai" target="_blank" rel="noopener noreferrer" class="project-link">↗ GitHub</a>
+          </article>
+
+          <article class="project-card reveal" data-tags="ai-ml">
+            <div class="project-icon" aria-hidden="true">📊</div>
+            <h3>comment-cat-prediction-challenge</h3>
+            <p>Ensemble ML pipeline for comment category prediction (Kaggle-style challenge).</p>
+            <div class="project-tags"><span class="tag">AI/ML</span><span class="tag">Data Science</span></div>
+            <a href="https://github.com/SammySN-car/comment-cat-prediction-challenge" target="_blank" rel="noopener noreferrer" class="project-link">↗ GitHub</a>
+          </article>
+
+          <article class="project-card reveal" data-tags="web full-stack">
+            <div class="project-icon" aria-hidden="true">🎟️</div>
+            <h3>Event-Booking-App</h3>
+            <p>Full-stack ticket booking with interactive seat selection and cyberpunk glassmorphic UI.</p>
+            <div class="project-tags"><span class="tag">Web</span><span class="tag">Full-stack</span><span class="tag">Vue</span></div>
+            <a href="https://github.com/SammySN-car/Event-Booking-App" target="_blank" rel="noopener noreferrer" class="project-link">↗ GitHub</a>
+          </article>
+        </div>
+
+        <p class="filter-empty" id="filter-empty" hidden>No projects match this filter.</p>
+      </div>
+    </section>
     <section id="opensource" class="section"></section>
     <section id="coursework" class="section"></section>
     <section id="contact" class="section"></section>
