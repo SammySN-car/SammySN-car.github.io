@@ -73,7 +73,7 @@ SammySN-car.github.io/
 |------|-----------|------------|
 | Background | `#0a0e14` | `#f8f9fa` |
 | Surface/cards | `#111827` | `#ffffff` |
-| Primary accent | `#22d3ee` (cyan) | `#0891b2` |
+| Primary accent | `#22d3ee` (cyan) | `#0e7490` (AA-contrast cyan) |
 | Secondary accent | `#a78bfa` (violet) | `#7c3aed` |
 | Text | `#e5e7eb` | `#1f2937` |
 

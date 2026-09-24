@@ -15,7 +15,7 @@ test('defines dark theme tokens on :root', () => {
 test('defines light theme overrides', () => {
   assert.match(css, /\[data-theme="light"\]/);
   assert.match(css, /--bg:\s*#f8f9fa/);
-  assert.match(css, /--primary:\s*#0891b2/);
+  assert.match(css, /--primary:\s*#0e7490/);
 });
 
 test('gates scroll-behavior behind no-preference', () => {
