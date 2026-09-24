@@ -1,1 +1,83 @@
-/* Design system and layout — filled in Task 2+ */
+:root {
+  --bg: #0a0e14;
+  --surface: #111827;
+  --primary: #22d3ee;
+  --secondary: #a78bfa;
+  --text: #e5e7eb;
+  --text-muted: #9ca3af;
+  --border: #1f2937;
+  --nav-bg: rgba(10, 14, 20, 0.85);
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+  --glow: 0 0 0 1px var(--primary), 0 0 20px rgba(34, 211, 238, 0.15);
+  --radius: 12px;
+  --max-w: 1100px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  color-scheme: dark;
+}
+
+[data-theme="light"] {
+  --bg: #f8f9fa;
+  --surface: #ffffff;
+  --primary: #0891b2;
+  --secondary: #7c3aed;
+  --text: #1f2937;
+  --text-muted: #6b7280;
+  --border: #e5e7eb;
+  --nav-bg: rgba(248, 249, 250, 0.85);
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  --glow: 0 0 0 1px var(--primary), 0 0 16px rgba(8, 145, 178, 0.12);
+  color-scheme: light;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-padding-top: 72px; }
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+img { max-width: 100%; display: block; }
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container { width: min(100% - 2rem, var(--max-w)); margin-inline: auto; }
+.section { padding-block: 4.5rem; }
+
+.section-title {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: 2rem;
+  color: var(--text);
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 3px;
+  margin-top: 0.5rem;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  border-radius: 2px;
+}
+
+.reveal { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  .reveal.reveal-visible { opacity: 1; transform: translateY(0); }
+}
+
+:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
