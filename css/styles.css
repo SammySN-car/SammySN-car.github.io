@@ -151,3 +151,37 @@ a:hover { text-decoration: underline; }
   .nav-links { flex-direction: column; gap: 0.75rem; }
 }
 
+.hero { min-height: calc(100vh - 64px); display: flex; align-items: center; padding-block: 4rem; }
+.hero-greeting { color: var(--primary); font-size: 1.1rem; margin-bottom: 0.75rem; font-family: var(--mono); }
+.hero-title { font-size: clamp(1.75rem, 5vw, 3rem); line-height: 1.2; font-weight: 800; max-width: 18ch; margin-bottom: 1rem; }
+.gradient-text {
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.hero-sub { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 2rem; }
+.hero-ctas { display: flex; flex-wrap: wrap; gap: 1rem; }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 600; font-size: 1rem;
+  text-decoration: none; transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  cursor: pointer; border: 2px solid transparent;
+}
+.btn:hover { text-decoration: none; transform: translateY(-2px); }
+.btn-primary { background: var(--primary); color: var(--bg); }
+.btn-primary:hover { box-shadow: 0 4px 16px rgba(34, 211, 238, 0.35); }
+.btn-outline { border-color: var(--border); color: var(--text); background: transparent; }
+.btn-outline:hover { border-color: var(--primary); color: var(--primary); }
+
+.about-grid { display: grid; grid-template-columns: 1fr; gap: 2.5rem; }
+@media (min-width: 768px) { .about-grid { grid-template-columns: 1fr 1.2fr; gap: 3rem; } }
+.about-bio p { margin-bottom: 1rem; color: var(--text-muted); }
+.about-bio strong { color: var(--text); }
+
+.skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+@media (min-width: 900px) { .skills-grid { grid-template-columns: repeat(4, 1fr); } }
+.skill-group { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; }
+.skill-group h3 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--primary); margin-bottom: 0.75rem; }
+.skill-group ul { list-style: none; }
+.skill-group li { font-size: 0.9rem; color: var(--text-muted); padding-block: 0.2rem; }
+
