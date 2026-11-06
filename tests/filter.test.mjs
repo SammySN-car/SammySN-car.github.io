@@ -16,13 +16,13 @@ const tags = [
   'ai-ml python rag',
   'ai-ml python',
   'ai-ml python',
-  'ai-ml python rag',
-  'web full-stack',
+  'ai-ml python web full-stack rag',
+  'ai-ml python agents',
 ];
 
 test('all shows seven', () => assert.strictEqual(countVisible(tags, 'all'), 7));
-test('ai-ml shows six', () => assert.strictEqual(countVisible(tags, 'ai-ml'), 6));
+test('ai-ml shows seven', () => assert.strictEqual(countVisible(tags, 'ai-ml'), 7));
 test('web shows one', () => assert.strictEqual(countVisible(tags, 'web'), 1));
 test('full-stack shows one', () => assert.strictEqual(countVisible(tags, 'full-stack'), 1));
-test('python shows six', () => assert.strictEqual(countVisible(tags, 'python'), 6));
+test('python shows seven', () => assert.strictEqual(countVisible(tags, 'python'), 7));
 test('unknown filter shows zero', () => assert.strictEqual(countVisible(tags, 'rust'), 0));
