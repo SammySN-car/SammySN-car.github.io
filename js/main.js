@@ -128,6 +128,12 @@ function initFooterYear() {
   if (el) el.textContent = String(new Date().getFullYear());
 }
 
+function initLucide() {
+  if (typeof window !== 'undefined' && window.lucide && typeof window.lucide.createIcons === 'function') {
+    window.lucide.createIcons();
+  }
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   bindThemeToggle();
   bindProjectFilter();
@@ -135,4 +141,5 @@ document.addEventListener('DOMContentLoaded', function () {
   initMobileNav();
   initActiveNav();
   initFooterYear();
+  initLucide();
 });
