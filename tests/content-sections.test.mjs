@@ -4,8 +4,9 @@ import assert from 'node:assert';
 
 const html = readFileSync(new URL('../index.html', import.meta.url), 'utf8');
 
-test('open source lists all five repos', () => {
+test('open source lists all repos including OmniRoute', () => {
   for (const repo of [
+    'cheaper-inference/OmniRoute',
     'pytorch/pytorch',
     'supabase/supabase',
     'ag2ai/faststream',
